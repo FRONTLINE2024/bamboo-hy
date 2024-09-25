@@ -12,7 +12,7 @@ then
   echo "== Allowed Headers: feat, fix, chore, rename, remove, refactor, test .. =="
   echo "== EXAMPLE => feat: Google login                                        =="
   echo "=========================================================================="
-  echo "== Your commit message was =>" $message 
+  echo "Commit message file path: $1"
   echo "== For more information, check script in .husky/commit-msg or README.md =="
   echo "=========================================================================="
   exit 1
