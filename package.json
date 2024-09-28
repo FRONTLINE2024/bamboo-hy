@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "husky": "^9.1.6",
+    "msw": "^2.4.9",
     "vite": "^5.4.1"
   }
 }
