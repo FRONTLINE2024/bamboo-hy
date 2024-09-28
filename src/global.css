@@ -1,3 +1,4 @@
+/* 폰트 설정 */
 @font-face {
     font-family: 'IBMPlexSansKR-Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
@@ -6,4 +7,10 @@
 @font-face {
     font-family: 'IBMPlexSansKR-Bold';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+}
+
+/* 전체 style */
+* {
+    margin: 0;
+    padding: 0;
 }
