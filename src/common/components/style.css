@@ -1,3 +1,4 @@
+/* header */
 header {
     display: flex;
     padding: 0 3em;
@@ -6,7 +7,6 @@ header {
     justify-content: space-between;
     box-shadow: 0 4px 10px #E2E2E2;
 }
-
 .header-left {
     display: flex;
     flex-direction: row;
@@ -17,7 +17,6 @@ header {
         font-family: 'IBMPlexSansKR-Regular';
         color: #000000;
     }
-
     p:last-child {
         font-size: 28px;
         font-family: 'IBMPlexSansKR-Bold';
@@ -25,7 +24,6 @@ header {
         margin: 2px 0 0 7px;
     }
 }
-
 .header-right {
     display: flex;
     flex-direction: row;
@@ -37,13 +35,11 @@ header {
         color: #097D27;
         margin-right: 7px;
     }
-
     p:last-child {
         font-size: 22px;
         font-family: 'IBMPlexSansKR-Regular';
         color: #000000;
     }
-
     input {
         width: 170px;
         height: 45px;
@@ -56,8 +52,31 @@ header {
         border-radius: 5px;
         outline: none;
     }
-
-    input:first-child {
-        margin-right: 10px;
+    input:nth-child(2) {
+        margin: 0 10px;
     }
+}
+hr {
+    height: 45px;
+    margin: 0 11px;
+    border: 0.5px solid #097D27;
+}
+
+/* button */
+button {
+    width: 114px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'IBMPlexSansKR-Bold';
+}
+.main-button {
+    background-color: #097D27;
+    color: #FFFFFF;
+    border: none;
+}
+.sub-button {
+    background-color: #FFFFFF;
+    color: #097D27;
+    border: 0.5px solid #097D27;
 }

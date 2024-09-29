@@ -1,4 +1,5 @@
 // import Button from "./button";
+import button from './button';
 import './style.css';
 
 function header() {
@@ -13,8 +14,9 @@ function header() {
         <div class='header-right'>
             <input type='text' placeholder='아이디'/>
             <input type='password' placeholder='비밀번호'/>
-            <button>로그인</button>
-            <button>회원가입</button>
+            ${button({ btnName: '로그인', isMain: true })}
+            <hr/>
+            ${button({ btnName: '회원가입', isMain: false })}
         </div>`;
     
     return `
