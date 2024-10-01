@@ -29,6 +29,8 @@ const App = async () => {
     // 페이지 렌더링
     main.innerHTML = await match.view();
 };
+// 뒤, 앞페이지로 이동 시 app() 호춣하여 url에 맞는 페이지로 다시 랜더링
+window.addEventListener("popstate", App);
 
 window.navigate = (url) => {
     window.history.pushState({}, null, url);
