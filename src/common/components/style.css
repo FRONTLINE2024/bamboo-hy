@@ -57,8 +57,11 @@ header {
     }
 }
 hr {
+    width: 0.5px;
     height: 45px;
     margin: 0 11px;
+    border: 0;
+    background-color: #097D27;
 }
 
 /* button */
@@ -68,6 +71,7 @@ button {
     border-radius: 5px;
     font-size: 17px;
     font-family: 'IBMPlexSansKR-Bold';
+    cursor: pointer;
 }
 .main-button {
     background-color: #097D27;
