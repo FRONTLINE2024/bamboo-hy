@@ -27,10 +27,10 @@ const App = async () => {
     const match = routes.find(route => window.location.pathname === route.path) || routes[1];
 
     // 페이지 렌더링
-    main.innerHTML = match.view();
+    main.innerHTML = await match.view();
 };
 
-export const navigate = (url) => {
+window.navigate = (url) => {
     window.history.pushState({}, null, url);
     App();
 };
