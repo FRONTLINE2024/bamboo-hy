@@ -16,7 +16,7 @@ const App = () => {
     appElement.innerHTML = Header();
 
     // 메인 컨테이너가 존재하지 않으면 생성
-    let main = document.querySelector('.page');
+    let main = document.querySelector('.main');
     if (!main) {
         main = document.createElement('div');
         main.className = 'page';
