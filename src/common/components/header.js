@@ -16,9 +16,9 @@ function header() {
                 <input type='text' placeholder='아이디'/>
                 <input type='password' placeholder='비밀번호'/>
             </form>
-            ${button({ btnName: '로그인', isMain: true })}
+            ${button({ btnName: '로그인', isMain: 'main-button' })}
             <hr/>
-            ${button({ btnName: '회원가입', isMain: false })}
+            ${button({ btnName: '회원가입', isMain: 'sub-button' })}
         </div>`;
     
     return `

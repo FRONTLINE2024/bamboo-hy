@@ -1,5 +1,4 @@
 function button({ btnName, isMain }) {
-    const className = isMain ? 'main-button' : 'sub-button';
-    return `<button class=${className}>${btnName}</button>`
+    return `<button class=${isMain}>${btnName}</button>`
 }
 export default button;
