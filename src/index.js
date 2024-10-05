@@ -9,7 +9,7 @@ const routes = [
     { path: '/post', view: PostPage, },
 ];
 
-const App = async () => {
+const App = () => {
     const appElement = document.getElementById('app');
     
     // Header 렌더링
@@ -27,7 +27,7 @@ const App = async () => {
     const match = routes.find(route => window.location.pathname === route.path) || routes[1];
 
     // 페이지 렌더링
-    main.innerHTML = await match.view();
+    main.innerHTML = match.view();
 };
 // 뒤, 앞페이지로 이동 시 app() 호춣하여 url에 맞는 페이지로 다시 랜더링
 window.addEventListener("popstate", App);
