@@ -1,7 +1,7 @@
 import writingImg from '../assets/img-writing-button.png';
 
 function writingButton() {
-    const container = document.createElement('div');
+    const container = document.createElement('button');
     const movePage = () => {
         window.navigate('/post');
     }
