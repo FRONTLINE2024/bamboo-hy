@@ -12,8 +12,10 @@ function header() {
         </div>
     ` : ` 
         <div class='header-right'>
-            <input type='text' placeholder='아이디'/>
-            <input type='password' placeholder='비밀번호'/>
+            <form name='login-info' method='get'>
+                <input type='text' placeholder='아이디'/>
+                <input type='password' placeholder='비밀번호'/>
+            </form>
             ${button({ btnName: '로그인', isMain: true })}
             <hr/>
             ${button({ btnName: '회원가입', isMain: false })}
