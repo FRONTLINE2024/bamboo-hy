@@ -1,5 +1,5 @@
 function writingItem({content, image, nickname, date, isWrite}) {
-    const imageCheck = image & image.length > 0 ? `
+    const imageCheck = image && image.length > 0 ? `
         <div class='writing-image'>
             <p>첨부 사진 |</p>
             ${image.map((imgSrc, idx) => `<img src=${imgSrc}/>`).join('')}
