@@ -1,10 +1,8 @@
+import { navigate } from '../../router';
 import writingImg from '../assets/img-writing-button.png';
 
 function writingButton() {
     const container = document.createElement('button');
-    const movePage = () => {
-        window.navigate('/post');
-    }
     
     container.innerHTML = `
         <div class='writing-button'>
@@ -15,7 +13,7 @@ function writingButton() {
 
     document.addEventListener('click', (event) => {
         if (event.target.closest('.writing-button')) {
-            movePage();
+            navigate('/post');
         }
     });
 
